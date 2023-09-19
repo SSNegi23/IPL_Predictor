@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 
-linear_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ann.pkl', 'rb'))
+linear_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-linear.pkl', 'rb'))
 ridge_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ridge.pkl', 'rb'))
 ann = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ann.pkl', 'rb'))
 rf_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-rf.pkl', 'rb'))

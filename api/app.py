@@ -4,11 +4,6 @@ import pickle
 
 app = Flask(__name__)
 
-linear_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-linear.pkl', 'rb'))
-ridge_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ridge.pkl', 'rb'))
-ann = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ann.pkl', 'rb'))
-rf_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-rf.pkl', 'rb'))
-
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -73,6 +68,10 @@ def predict():
         
         data = np.array([temp_array])
 
+        linear_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-linear.pkl', 'rb'))
+        ridge_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ridge.pkl', 'rb'))
+        ann = pickle.load(open('api\\Weights\\first-innings-score-lr-model-ann.pkl', 'rb'))
+        rf_regressor = pickle.load(open('api\\Weights\\first-innings-score-lr-model-rf.pkl', 'rb'))
 
         my_prediction_linear = int(linear_regressor.predict(data)[0])
         my_prediction_ridge = int(ridge_regressor.predict(data)[0])

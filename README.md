@@ -10,9 +10,8 @@
 ## Introduction
 
 ![Python 3.7](https://img.shields.io/badge/Python-3.6-brightgreen.svg)
-![scikit-learn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg)
 ![Flask](https://img.shields.io/badge/Framework-Flask-lightblue.svg)
-![Heroku](https://img.shields.io/badge/CLoud_Platform-Heroku-orange.svg)
+![Heroku](https://img.shields.io/badge/CLoud_Platform-Vercel-orange.svg)
 
 
 <p>
@@ -20,8 +19,10 @@
 	be scoring in an innings . Our project will assist you in predicting the score of first innings of an IPL match.
 	</br>
 	It use machine learning algorithm and based on data of previous played IPL match from year 2008-2021 from kaggle dataset
-	to help in predicting score of `TATA IPL 2022` and using Flask we have developed a web app and deployed it using Heroku.
+	to help in predicting score of `TATA IPL 2022` and using Flask we have developed a web app and deployed it using Vercel.
 	</br>
+ 	Novelity of our project would be including the dataset for two new teams for Gujurat and Pune in our dataset through we scrapping and adjust it such that predictions could me made for new teams as well.
+  	</br>
 </p>
 
 ___
@@ -30,16 +31,16 @@ ___
 <p>
 	Instructions to use the website :
 <ol>
-	<li> Select the `Bowling` and `Batting` Team </li>
+	<li> Select the <b>Bowling</b> and <b>Batting</b> Team </li>
 	<li> With minimun threashold value of 6.0 overs give number of over passed </li>
 	<li> Provide current run scored and number of wickets fallen</li>
 	<li> Provide run scored and number of wickets fallen in last 5 Overs (to track current performance </li>
 	<li> Predicting the final score of first inning with comparision of different machine learning models such as :
 		<ul>
-			<li> `Linear Regression`
-			<li> `Ridge Regression`
-			<li> `Random Forest Regression`
-			<li> `Artificial Neural Network (Multi Layer Perceptron)`
+			<li> <b>Linear Regression</b>
+			<li> <b>Ridge Regression</b>
+			<li> <b>Random Forest Regression</b>
+			<li> <b>Multi Layer Perceptron</b>
 		</ul>
 	</li>
 </ol>
@@ -49,7 +50,7 @@ ___
 
 ## Feature
 • This repository consists of files required to deploy a ___IPL Prediction Machine Learning Web App___ created with
-___Flask___ and hosted on ___Netlify___ platform.
+___Flask___ and hosted on ___Vercel___ platform.
 
 
 • The following link contains the repository foe : __Code__, __Algorithms used__ and __Accuracy__ of the model. Click
